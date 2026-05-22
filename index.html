@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTAL MIX Utilidades | Produtos de Limpeza, Automotivo e Piscina</title>
+    <meta name="description" content="A TOTAL MIX Utilidades oferece soluções completas em produtos de limpeza, cuidados para piscinas e linha automotiva. Qualidade, rendimento e entrega rápida para sua residência ou empresa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- ══ HEADER & NAVEGAÇÃO ══ -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <!-- Logo Vetorial -->
+            <a href="#" class="logo-wrapper" id="nav-logo" title="TOTAL MIX Utilidades">
+                <div class="logo-svg-container">
+                    <svg viewBox="0 0 500 500" class="logo-svg">
+                        <defs>
+                            <linearGradient id="swirlDark" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0f1e36"/>
+                                <stop offset="100%" stop-color="#1c375e"/>
+                            </linearGradient>
+                            <linearGradient id="swirlMedium" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#0056b3"/>
+                                <stop offset="100%" stop-color="#00b4d8"/>
+                            </linearGradient>
+                            <linearGradient id="swirlLight" x1="100%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#90e0ef"/>
+                                <stop offset="100%" stop-color="#00b4d8"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Spiraling Waves -->
+                        <g transform="translate(250, 200)">
+                            <!-- Wave 1 (Dark Blue) -->
+                            <path d="M 0,-150 C 90,-150 150,-90 150,0 C 150,70 100,120 40,140 C 90,110 120,60 120,0 C 120,-70 70,-120 0,-120 C -70,-120 -120,-70 -120,0 C -120,60 -90,110 -40,140 C -100,120 -150,70 -150,0 C -150,-90 -90,-150 0,-150 Z" fill="url(#swirlDark)" />
+                            <!-- Wave 2 (Medium Blue) -->
+                            <path d="M -40,-130 C 30,-160 110,-120 130,-40 C 140,20 110,80 60,110 C 90,80 100,40 90,0 C 80,-40 40,-80 -10,-90 C -60,-100 -100,-70 -110,-30 C -120,20 -100,70 -60,110 C -110,80 -140,20 -130,-40 C -110,-120 -30,-160 -40,-130 Z" fill="url(#swirlMedium)" transform="rotate(45)" />
+                            <!-- Wave 3 (Light Blue) -->
+                            <path d="M -80,-100 C -20,-140 60,-120 90,-60 C 110,-10 90,50 50,80 C 70,50 80,10 70,-20 C 60,-50 30,-80 -20,-80 C -60,-80 -90,-50 -90,-10 C -90,30 -70,70 -40,90 C -80,70 -110,30 -100,-30 C -90,-70 -50,-90 -80,-100 Z" fill="url(#swirlLight)" transform="rotate(90)" />
+                            
+                            <!-- Central Merged TM Shape -->
+                            <!-- Letter T -->
+                            <path d="M -75,-30 L -15,-30 L -15,-10 L -38,-10 L -38,40 L -58,40 L -58,-10 L -75,-10 Z" fill="#0f1e36" />
+                            <!-- Letter M -->
+                            <path d="M -15,-10 C -15,-25 -5,-30 5,-30 C 13,-30 18,-24 20,-18 C 22,-24 27,-30 35,-30 C 45,-30 50,-23 50,-10 L 50,40 L 33,40 L 33,-3 C 33,-7 30,-11 26,-11 C 22,-11 19,-7 19,-3 L 19,40 L 2,40 L 2,-3 C 2,-7 -1,-11 -5,-11 C -9,-11 -12,-7 -12,-3 L -12,40 L -25,40 L -25,-10 Z" fill="#00b4d8" />
+                            
+                            <!-- Water Droplet with Sparkles above M -->
+                            <path d="M 12,-48 C 12,-48 24,-33 24,-25 C 24,-18 19,-13 12,-13 C 5,-13 0,-18 0,-25 C 0,-33 12,-48 12,-48 Z" fill="#90e0ef" />
+                            <!-- Sparkles on Droplet -->
+                            <path d="M 10,-28 L 12,-32 L 14,-28 L 18,-26 L 14,-24 L 12,-20 L 10,-24 L 6,-26 Z" fill="#ffffff" />
+                            <path d="M 15,-20 L 16,-22 L 17,-20 L 19,-19 L 17,-18 L 16,-16 L 15,-18 L 13,-19 Z" fill="#ffffff" />
+                            
+                            <!-- Circular Droplets Splashing -->
+                            <circle cx="160" cy="-60" r="9" fill="#0056b3" />
+                            <circle cx="-160" cy="70" r="7" fill="#00b4d8" />
+                            <circle cx="110" cy="130" r="6" fill="#90e0ef" />
+                            <circle cx="-110" cy="-115" r="8" fill="#0f1e36" />
+                            <circle cx="40" cy="-175" r="5" fill="#00b4d8" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">TOTAL MIX</span>
+                    <span class="brand-sub">Utilidades</span>
+                </div>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="desktop-nav" aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Início</a></li>
+                    <li><a href="#categorias" class="nav-link">Categorias</a></li>
+                    <li><a href="#produtos" class="nav-link">Catálogo</a></li>
+                    <li><a href="#monte-seu-kit" class="nav-link">Monte seu Kit</a></li>
+                    <li><a href="#sobre-nos" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ações do Header (Busca + Carrinho + Hamburguer) -->
+            <div class="header-actions">
+                <!-- Barra de Busca Rápida -->
+                <div class="search-box">
+                    <input type="text" id="quick-search" placeholder="Buscar produtos...">
+                    <button class="search-btn" id="btn-search-trigger" aria-label="Buscar">
+                        <i data-lucide="search"></i>
+                    </button>
+                </div>
+
+                <!-- Ícone de Carrinho Flutuante -->
+                <button class="cart-trigger-btn" id="btn-cart-toggle" aria-label="Ver Carrinho">
+                    <i data-lucide="shopping-cart"></i>
+                    <span class="cart-badge" id="cart-counter">0</span>
+                </button>
+
+                <!-- Botão de Menu Responsivo (Hambúrguer) -->
+                <button class="menu-hamburger-btn" id="btn-menu-mobile" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Drawer -->
+        <div class="mobile-nav-drawer" id="mobile-nav">
+            <nav aria-label="Navegação Mobile">
+                <ul>
+                    <li><a href="#hero" class="mobile-link">Início</a></li>
+                    <li><a href="#categorias" class="mobile-link">Categorias</a></li>
+                    <li><a href="#produtos" class="mobile-link">Catálogo de Produtos</a></li>
+                    <li><a href="#monte-seu-kit" class="mobile-link">Monte seu Kit (15% OFF)</a></li>
+                    <li><a href="#sobre-nos" class="mobile-link">Sobre Nós</a></li>
+                    <li><a href="#contato" class="mobile-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ══ HERO SECTION ══ -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay-decor">
+            <div class="bubble bubble-1"></div>
+            <div class="bubble bubble-2"></div>
+            <div class="bubble bubble-3"></div>
+            <div class="sparkle sparkle-1">✦</div>
+            <div class="sparkle sparkle-2">✦</div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-tag">A Solução Ideal para Você</span>
+                <h1 class="hero-title">Eficiência que Brilha, Qualidade que Rende!</h1>
+                <p class="hero-subtitle">Produtos de limpeza premium, utensílios de faxina profissional, cuidados para piscina e linha automotiva completa direto para o seu dia a dia.</p>
+                <div class="hero-actions-group">
+                    <a href="#produtos" class="btn btn-primary btn-lg">
+                        <i data-lucide="shopping-bag"></i> Explorar Catálogo
+                    </a>
+                    <a href="#monte-seu-kit" class="btn btn-secondary btn-lg">
+                        <i data-lucide="sparkles"></i> Criar Meu Kit Personalizado
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-card-glass">
+                    <div class="visual-header">
+                        <div class="visual-dot dot-red"></div>
+                        <div class="visual-dot dot-yellow"></div>
+                        <div class="visual-dot dot-green"></div>
+                        <span class="visual-title">Total Mix Promoções</span>
+                    </div>
+                    <div class="visual-body">
+                        <div class="promo-badge">Mais Vendido 🌟</div>
+                        <div class="promo-img-placeholder">
+                            <i data-lucide="droplet" class="water-icon-animate"></i>
+                        </div>
+                        <h3>Super Kit Limpeza Express</h3>
+                        <p>Detergente Concentrado + Pano Microfibra + Desinfetante Perfumado.</p>
+                        <div class="price-row">
+                            <span class="old-price">R$ 49,90</span>
+                            <span class="new-price">R$ 39,90</span>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-add-promo" data-promo-id="promo-1">
+                            Adicionar Oferta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SEÇÃO DE CATEGORIAS ══ -->
+    <section class="categories-section" id="categorias">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Nossas Linhas</span>
+                <h2 class="section-title">O que você procura hoje?</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Categoria 1: Limpeza Geral -->
+                <div class="category-card" data-category-filter="limpeza">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="spray-can"></i>
+                    </div>
+                    <h3>Limpeza Geral</h3>
+                    <p>Desinfetantes, detergentes, multiuso e produtos de alto rendimento.</p>
+                    <a href="#produtos" class="category-link">Ver produtos <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- Categoria 2: Utensílios -->
+                <div class="category-card" data-category-filter="utensilios">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="brush"></i>
+                    </div>
+                    <h3>Utensílios de Faxina</h3>
+                    <p>Mops, vassouras, rodos reforçados, panos de microfibra e baldes.</p>
+                    <a href="#produtos" class="category-link">Ver utensílios <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- Categoria 3: Piscina -->
+                <div class="category-card" data-category-filter="piscina">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="waves"></i>
+                    </div>
+                    <h3>Linha Piscina</h3>
+                    <p>Cloro estabilizado, algicidas, clarificantes e acessórios de aspiração.</p>
+                    <a href="#produtos" class="category-link">Ver produtos <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- Categoria 4: Automotivo -->
+                <div class="category-card" data-category-filter="automotivo">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="car"></i>
+                    </div>
+                    <h3>Linha Automotiva</h3>
+                    <p>Shampoos com cera, pretinho para pneus, polidores e ceras protetoras.</p>
+                    <a href="#produtos" class="category-link">Ver produtos <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ INTERACTIVE KIT BUILDER ("MONTE SEU KIT") ══ -->
+    <section class="kit-builder-section" id="monte-seu-kit">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Desconto Especial</span>
+                <h2 class="section-title">Monte Seu Kit Personalizado!</h2>
+                <p class="section-subtitle">Monte seu combo com os itens necessários para sua faxina e ganhe <strong>15% de Desconto</strong> automático no total do Kit!</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="kit-builder-container">
+                <!-- Passo a Passo de Seleção -->
+                <div class="kit-steps-content">
+                    <!-- Step 1: Escolha um Recipiente (Balde) -->
+                    <div class="kit-step-block active" data-step="1">
+                        <div class="step-header">
+                            <span class="step-num">1</span>
+                            <h3>Escolha seu Balde ou Organização</h3>
+                        </div>
+                        <div class="step-options-grid" id="kit-step-1-options">
+                            <!-- Inserido dinamicamente via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Escolha um Equipamento (Mop/Vassoura) -->
+                    <div class="kit-step-block" data-step="2">
+                        <div class="step-header">
+                            <span class="step-num">2</span>
+                            <h3>Escolha um Mop, Vassoura ou Rodo</h3>
+                        </div>
+                        <div class="step-options-grid" id="kit-step-2-options">
+                            <!-- Inserido dinamicamente via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Escolha 2 Químicos de Limpeza -->
+                    <div class="kit-step-block" data-step="3">
+                        <div class="step-header">
+                            <span class="step-num">3</span>
+                            <h3>Escolha 2 Produtos Químicos (Limpeza/Automotivo/Piscina)</h3>
+                            <span class="selection-counter" id="step-3-counter">(0 de 2 selecionados)</span>
+                        </div>
+                        <div class="step-options-grid" id="kit-step-3-options">
+                            <!-- Inserido dinamicamente via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Escolha 2 Acessórios (Panos/Esponjas/Luvas) -->
+                    <div class="kit-step-block" data-step="4">
+                        <div class="step-header">
+                            <span class="step-num">4</span>
+                            <h3>Escolha 2 Acessórios de Limpeza</h3>
+                            <span class="selection-counter" id="step-4-counter">(0 de 2 selecionados)</span>
+                        </div>
+                        <div class="step-options-grid" id="kit-step-4-options">
+                            <!-- Inserido dinamicamente via JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Painel Resumo do Kit Lateral -->
+                <div class="kit-summary-sidebar">
+                    <div class="kit-summary-card">
+                        <h3>Resumo do seu Kit</h3>
+                        <div class="kit-summary-items-list" id="kit-summary-list">
+                            <p class="empty-kit-msg">Selecione os itens para começar a montar o seu Kit personalizado.</p>
+                        </div>
+                        <div class="kit-progress-bar-container">
+                            <div class="kit-progress-bar" id="kit-progress"></div>
+                            <span class="kit-progress-text" id="kit-progress-label">0% Concluído</span>
+                        </div>
+                        <div class="kit-pricing-summary">
+                            <div class="price-row-item">
+                                <span>Subtotal do Kit:</span>
+                                <span id="kit-subtotal">R$ 0,00</span>
+                            </div>
+                            <div class="price-row-item discount-row hidden" id="kit-discount-row">
+                                <span>Desconto do Combo (15%):</span>
+                                <span id="kit-discount">- R$ 0,00</span>
+                            </div>
+                            <div class="price-row-item total-row">
+                                <span>Valor Final do Kit:</span>
+                                <span id="kit-total">R$ 0,00</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" id="btn-add-kit-to-cart" disabled>
+                            <i data-lucide="shopping-cart"></i> Adicionar Kit ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ CATÁLOGO DE PRODUTOS ══ -->
+    <section class="products-section" id="produtos">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Nossos Produtos</span>
+                <h2 class="section-title">Linha Completa de Limpeza e Utilidades</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Filtros e Controles -->
+            <div class="catalog-controls">
+                <div class="filter-tabs">
+                    <button class="filter-tab-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-tab-btn" data-filter="limpeza">Produtos Químicos</button>
+                    <button class="filter-tab-btn" data-filter="utensilios">Utensílios</button>
+                    <button class="filter-tab-btn" data-filter="piscina">Cuidados com Piscina</button>
+                    <button class="filter-tab-btn" data-filter="automotivo">Automotivo</button>
+                </div>
+                
+                <div class="sort-search-group">
+                    <div class="search-input-wrapper">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" id="catalog-search" placeholder="O que você está procurando?">
+                        <button id="btn-clear-catalog-search" class="clear-search-btn-inside hidden">
+                            <i data-lucide="x"></i>
+                        </button>
+                    </div>
+                    <div class="select-sort-wrapper">
+                        <select id="catalog-sort" class="sort-select" title="Ordernar por">
+                            <option value="default">Relevância</option>
+                            <option value="price-asc">Menor Preço</option>
+                            <option value="price-desc">Maior Preço</option>
+                            <option value="name-asc">Nome (A - Z)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid de Produtos -->
+            <div class="products-grid" id="products-catalog-grid">
+                <!-- Inserido dinamicamente via JS -->
+            </div>
+
+            <!-- Estado de Busca Vazia -->
+            <div class="empty-search-state hidden" id="empty-search">
+                <div class="empty-search-icon">🔎</div>
+                <h3>Nenhum produto encontrado</h3>
+                <p>Não encontramos nenhum produto correspondente ao termo pesquisado. Tente pesquisar por palavras-chave mais genéricas.</p>
+                <button class="btn btn-secondary" id="btn-reset-filters">Limpar Filtros e Busca</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SEÇÃO SOBRE NÓS (DESCRISÃO DO USUÁRIO) ══ -->
+    <section class="about-section" id="sobre-nos">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-bg-blob"></div>
+                    <div class="about-photo-card glass-panel">
+                        <div class="photo-card-header">
+                            <i data-lucide="sparkles" class="text-sky"></i>
+                            <span>Compromisso e Qualidade</span>
+                        </div>
+                        <div class="photo-card-body">
+                            <div class="icon-circle-large animate-pulse">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <h3>Linha Profissional e Doméstica</h3>
+                            <p>Selecionamos marcas e fórmulas que entregam eficiência real.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text-content">
+                    <span class="section-tag">Quem Somos</span>
+                    <h2 class="about-title">A TOTAL MIX Utilidades</h2>
+                    <div class="section-divider-left"></div>
+                    
+                    <p class="about-paragraph highlight">
+                        Somos uma empresa especializada em soluções de limpeza, cuidados para piscinas e produtos automotivos, oferecendo qualidade, praticidade e confiança para clientes residenciais e profissionais.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        Trabalhamos com uma linha completa de produtos selecionados para garantir eficiência, rendimento e excelente resultado dia a dia. Nosso compromisso é fornecer atendimento ágil, produtos de qualidade e suporte especializado para ajudar nossos clientes a encontrar as melhores soluções para cada necessidade.
+                    </p>
+                    
+                    <p class="about-paragraph">
+                        Atuamos no atendimento digital e em nosso centro de distribuição, proporcionando mais praticidade, rapidez nas entregas e facilidade na retirada dos pedidos.
+                    </p>
+
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Produtos de Qualidade</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">Rápido</span>
+                            <span class="stat-label">Entrega & Retirada</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">Digital</span>
+                            <span class="stat-label">Atendimento Ágil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ SEÇÃO DE DIFERENCIAIS ══ -->
+    <section class="benefits-section">
+        <div class="section-container">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <i data-lucide="truck"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Rapidez nas Entregas</h3>
+                        <p>Despachamos seu pedido com agilidade para você não parar o serviço.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <i data-lucide="package-check"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Retirada no CD</h3>
+                        <p>Facilidade para retirar seus pedidos diretamente em nosso centro de distribuição.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <i data-lucide="message-square-heart"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Suporte Especializado</h3>
+                        <p>Dúvidas sobre diluição ou qual produto usar? Nós ajudamos você.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon-box">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Economia e Rendimento</h3>
+                        <p>Produtos concentrados com alta rentabilidade por metro quadrado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ CONTATO E LOCALIZAÇÃO ══ -->
+    <section class="contact-section" id="contato">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="section-tag">Fale Conosco</span>
+                <h2 class="section-title">Estamos Prontos para te Atender</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Formulário de Contato -->
+                <div class="contact-form-card glass-panel">
+                    <h3>Envie uma mensagem</h3>
+                    <form id="contact-form">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="contact-name">Nome Completo</label>
+                                <input type="text" id="contact-name" placeholder="Ex: Maria Silva" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Telefone/WhatsApp</label>
+                                <input type="tel" id="contact-phone" placeholder="Ex: (48) 99999-9999" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">E-mail</label>
+                            <input type="email" id="contact-email" placeholder="Ex: contato@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Assunto de interesse</label>
+                            <select id="contact-subject" title="Assunto">
+                                <option value="duvida">Dúvidas sobre produtos</option>
+                                <option value="orcamento">Orçamento para Empresas</option>
+                                <option value="entrega">Status de Entrega</option>
+                                <option value="parceria">Seja um Distribuidor/Parceiro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Mensagem</label>
+                            <textarea id="contact-message" rows="4" placeholder="Como podemos te ajudar hoje?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i data-lucide="send"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                    <div id="contact-success-msg" class="form-success-alert hidden">
+                        <i data-lucide="check-circle"></i>
+                        <span>Mensagem enviada com sucesso! Entraremos em contato em breve.</span>
+                    </div>
+                </div>
+
+                <!-- Info de Contato & Mapa -->
+                <div class="contact-info-panel">
+                    <div class="info-details-card glass-panel">
+                        <h3>Canais de Atendimento</h3>
+                        
+                        <div class="info-item">
+                            <i data-lucide="phone" class="info-icon"></i>
+                            <div class="info-content">
+                                <span>Telefone / WhatsApp</span>
+                                <strong>(48) 99999-9999</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i data-lucide="mail" class="info-icon"></i>
+                            <div class="info-content">
+                                <span>E-mail Corporativo</span>
+                                <strong>contato@totalmixutilidades.com.br</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i data-lucide="map-pin" class="info-icon"></i>
+                            <div class="info-content">
+                                <span>Centro de Distribuição</span>
+                                <strong>Av. Principal de Logística, 1200 - Galpão 04, Palhoça - SC</strong>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i data-lucide="clock" class="info-icon"></i>
+                            <div class="info-content">
+                                <span>Horário de Atendimento</span>
+                                <strong>Segunda a Sexta: 08:00 às 18:00 · Sábados: 08:00 às 12:00</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock de Mapa Moderno e Interativo -->
+                    <div class="map-mock-container glass-panel">
+                        <div class="map-pin-pulse">
+                            <i data-lucide="map-pin" class="pin-icon"></i>
+                            <div class="pulse-ring"></div>
+                        </div>
+                        <div class="map-label">
+                            <strong>TOTAL MIX Utilidades</strong>
+                            <span>Centro de Distribuição</span>
+                        </div>
+                        <!-- Desenho de ruas em SVG como fundo do mapa fictício -->
+                        <svg class="map-svg-roads" viewBox="0 0 400 200">
+                            <path d="M 0,50 L 400,50" stroke="rgba(255,255,255,0.06)" stroke-width="8" fill="none"/>
+                            <path d="M 150,0 L 150,200" stroke="rgba(255,255,255,0.06)" stroke-width="12" fill="none"/>
+                            <path d="M 0,150 L 400,100" stroke="rgba(255,255,255,0.06)" stroke-width="10" fill="none"/>
+                            <path d="M 300,0 L 300,200" stroke="rgba(255,255,255,0.06)" stroke-width="8" fill="none"/>
+                            <circle cx="150" cy="100" r="14" fill="#00b4d8" opacity="0.2" />
+                            <circle cx="150" cy="100" r="6" fill="#00b4d8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ CARRINHO LATERAL (DRAWER) ══ -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+    <aside class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-header">
+            <div class="title-wrap">
+                <i data-lucide="shopping-cart"></i>
+                <h2>Meu Carrinho</h2>
+            </div>
+            <button class="btn-close-cart" id="btn-cart-close" aria-label="Fechar Carrinho">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+
+        <!-- Conteúdo do Carrinho -->
+        <div class="cart-drawer-body" id="cart-items-container">
+            <!-- Renderizado dinamicamente pelo JS -->
+            <div class="empty-cart-state">
+                <i data-lucide="shopping-bag" class="empty-icon"></i>
+                <p>Seu carrinho está vazio.</p>
+                <a href="#produtos" class="btn btn-secondary" id="btn-start-shopping">Escolher Produtos</a>
+            </div>
+        </div>
+
+        <!-- Rodapé do Carrinho -->
+        <div class="cart-drawer-footer" id="cart-footer-area">
+            <div class="cart-summary-line">
+                <span>Itens:</span>
+                <span id="cart-total-items">0</span>
+            </div>
+            <div class="cart-summary-line total-price-line">
+                <span>Total Estimado:</span>
+                <span id="cart-total-price">R$ 0,00</span>
+            </div>
+
+            <!-- Dados de entrega/retirada fictícios para o Zap -->
+            <div class="delivery-options-box">
+                <h4>Opção de Recebimento</h4>
+                <div class="delivery-radio-group">
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery-method" value="entrega" checked>
+                        <span>Solicitar Entrega</span>
+                    </label>
+                    <label class="delivery-option">
+                        <input type="radio" name="delivery-method" value="retirada">
+                        <span>Retirar no CD</span>
+                    </label>
+                </div>
+                <div class="delivery-address-input-wrapper" id="delivery-address-group">
+                    <label for="cart-address-input">Endereço de Entrega (Cidade/Bairro):</label>
+                    <input type="text" id="cart-address-input" placeholder="Ex: Palhoça, Centro - Rua 10, nº 100">
+                </div>
+            </div>
+
+            <!-- Botão de Finalização no WhatsApp -->
+            <button class="btn btn-primary btn-block btn-checkout-whatsapp" id="btn-checkout">
+                <svg viewBox="0 0 24 24" class="whatsapp-icon" width="20" height="20">
+                    <path fill="currentColor" d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.761.459 3.477 1.332 4.992L2 22l5.163-1.355c1.464.8 3.102 1.22 4.849 1.22h.004c5.505 0 9.988-4.482 9.988-9.988 0-2.667-1.037-5.176-2.923-7.062C17.195 3.03 14.683 2 12.012 2zm0 1.69c2.215 0 4.298.863 5.864 2.43 1.566 1.567 2.43 3.65 2.43 5.867 0 4.577-3.72 8.297-8.298 8.297h-.003c-1.523 0-3.023-.418-4.336-1.207l-.311-.185-3.226.846.861-3.146-.204-.325c-.867-1.381-1.326-2.983-1.326-4.636-.001-4.577 3.72-8.297 8.298-8.297zm-3.844 4.76c-.211 0-.46.079-.696.347-.236.268-.902.882-.902 2.149 0 1.268.922 2.493 1.05 2.668.127.174 1.815 2.772 4.398 3.882.615.264 1.094.422 1.468.541.617.196 1.178.168 1.621.102.495-.074 1.517-.62 1.73-.1.213-.52.213-.966.213-1.047 0-.083-.049-.153-.122-.19l-.536-.268c-.347-.174-2.054-1.013-2.375-1.129-.321-.115-.555-.174-.79.174-.236.347-.902 1.129-1.107 1.36-.206.232-.412.26-.76.087-.348-.174-1.47-.542-2.798-1.727-1.034-.922-1.731-2.062-1.934-2.41-.203-.348-.022-.536.152-.709.156-.156.348-.407.521-.61.173-.203.23-.348.347-.58.117-.232.058-.435-.029-.61-.087-.174-.79-1.901-1.082-2.603-.284-.682-.573-.59-.79-.601-.204-.01-.437-.013-.67-.013z"/>
+                </svg>
+                Finalizar no WhatsApp
+            </button>
+        </div>
+    </aside>
+
+    <!-- ══ MODAL DE DETALHES DO PRODUTO ══ -->
+    <div class="modal-overlay hidden" id="product-detail-modal">
+        <div class="product-modal-content glass-panel">
+            <button class="close-modal-btn" id="btn-close-product-modal" aria-label="Fechar Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="product-modal-body">
+                <div class="modal-product-visual">
+                    <div class="modal-product-badge" id="modal-product-tag">Lançamento</div>
+                    <div class="modal-img-placeholder" id="modal-product-icon-container">
+                        <!-- Ícone do Produto representativo -->
+                    </div>
+                </div>
+                <div class="modal-product-details">
+                    <span class="modal-category-breadcrumb" id="modal-product-category">Limpeza Geral</span>
+                    <h3 class="modal-product-title" id="modal-product-title">Detergente Neutro Pro 5L</h3>
+                    
+                    <div class="rating-row">
+                        <div class="stars" id="modal-product-rating">
+                            ★★★★★
+                        </div>
+                        <span class="reviews-count">(42 avaliações de clientes)</span>
+                    </div>
+
+                    <p class="modal-product-desc" id="modal-product-description">
+                        Detergente neutro super concentrado de alto rendimento, ideal para louças, superfícies laváveis e limpeza em geral. Fórmula biodegradável que protege as mãos e remove as gorduras mais difíceis.
+                    </p>
+
+                    <!-- Detalhes Técnicos adicionais -->
+                    <div class="technical-details">
+                        <h4>Instruções de Uso:</h4>
+                        <p id="modal-product-usage">Diluir 1 parte de produto em até 20 partes de água para limpeza leve, ou aplicar puro em esponja para remoção de gordura intensa.</p>
+                        
+                        <div class="specs-table">
+                            <div class="spec-row">
+                                <span class="spec-label">Embalagem/Volume:</span>
+                                <span class="spec-val" id="modal-product-volume">Bombona de 5 Litros</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Rendimento Estimado:</span>
+                                <span class="spec-val" id="modal-product-yield">Até 100 Litros diluídos</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Diluição Recomendada:</span>
+                                <span class="spec-val" id="modal-product-dilution">1:20 (Limpeza Geral)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rodapé de compra do modal -->
+                    <div class="modal-buy-footer">
+                        <div class="modal-price-box">
+                            <span class="price-label">Preço Unitário</span>
+                            <strong class="modal-price-val" id="modal-product-price">R$ 24,90</strong>
+                        </div>
+                        <div class="modal-action-row">
+                            <div class="qty-selector">
+                                <button class="btn-qty-minus" id="btn-modal-qty-minus">−</button>
+                                <input type="number" id="input-modal-qty" value="1" min="1" title="Quantidade">
+                                <button class="btn-qty-plus" id="btn-modal-qty-plus">+</button>
+                            </div>
+                            <button class="btn btn-primary" id="btn-modal-add-to-cart">
+                                <i data-lucide="shopping-cart"></i> Adicionar ao Carrinho
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ RODAPÉ (FOOTER) ══ -->
+    <footer class="main-footer">
+        <div class="footer-top-container">
+            <!-- Coluna 1: Logo & Descrição -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <div class="logo-circle-mini">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <span>TOTAL MIX Utilidades</span>
+                </div>
+                <p class="footer-brand-desc">
+                    Trabalhamos com uma linha completa de produtos selecionados para garantir eficiência, rendimento e excelente resultado dia a dia para residências e empresas.
+                </p>
+                <div class="social-links-row">
+                    <a href="#" aria-label="Facebook" class="social-btn"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Instagram" class="social-btn"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp" class="social-btn"><i data-lucide="phone-call"></i></a>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Links Rápidos -->
+            <div class="footer-col">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#produtos">Catálogo de Produtos</a></li>
+                    <li><a href="#monte-seu-kit">Monte seu Kit</a></li>
+                    <li><a href="#sobre-nos">Quem Somos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Nossos Segmentos -->
+            <div class="footer-col">
+                <h3>Nossos Segmentos</h3>
+                <ul>
+                    <li><a href="#produtos">Produtos de Limpeza</a></li>
+                    <li><a href="#produtos">Utensílios de Faxina</a></li>
+                    <li><a href="#produtos">Tratamento de Piscinas</a></li>
+                    <li><a href="#produtos">Cuidados Automotivos</a></li>
+                    <li><a href="#produtos">EPIs e Segurança</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Informações Importantes -->
+            <div class="footer-col">
+                <h3>Centro de Distribuição</h3>
+                <p class="footer-address">
+                    Av. Principal de Logística, 1200 - Galpão 04<br>
+                    Palhoça - SC - CEP 88130-000
+                </p>
+                <p class="footer-contact-info">
+                    WhatsApp: (48) 99999-9999<br>
+                    E-mail: contato@totalmixutilidades.com.br
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 TOTAL MIX Utilidades. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+                <p>Desenvolvido com foco em Eficiência e Qualidade</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Lógica do Site -->
+    <script type="module" src="app.js"></script>
+    <!-- Script de fallback se não rodar como module no navegador local -->
+    <script>
+        if (window.location.protocol === 'file:') {
+            document.write('<script src="app.js"><\/script>');
+        }
+    </script>
+</body>
+</html>
