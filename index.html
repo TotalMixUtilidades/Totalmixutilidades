@@ -114,8 +114,8 @@
                 <ul>
                     <li><a href="#hero" class="mobile-link">Início</a></li>
                     <li><a href="#categorias" class="mobile-link">Categorias</a></li>
-                    <li><a href="#produtos" class="mobile-link">Catálogo de Produtos</a></li>
-                    <li><a href="#monte-seu-kit" class="mobile-link">Monte seu Kit (15% OFF)</a></li>
+                    <li><a href="#produtos" class="mobile-link">Catálogo</a></li>
+                    <li><a href="#monte-seu-kit" class="mobile-link">Monte seu Combo</a></li>
                     <li><a href="#sobre-nos" class="mobile-link">Sobre Nós</a></li>
                     <li><a href="#contato" class="mobile-link">Contato</a></li>
                 </ul>
@@ -314,44 +314,70 @@
                 <div class="section-divider"></div>
             </div>
 
-            <!-- Filtros e Controles -->
-            <div class="catalog-controls">
-                <div class="filter-tabs">
-                    <button class="filter-tab-btn active" data-filter="todos">Todos</button>
-                    <button class="filter-tab-btn" data-filter="limpeza">Produtos Químicos</button>
-                    <button class="filter-tab-btn" data-filter="utensilios">Utensílios</button>
-                    <button class="filter-tab-btn" data-filter="piscina">Cuidados com Piscina</button>
-                    <button class="filter-tab-btn" data-filter="automotivo">Automotivo</button>
-                </div>
-                
-                <div class="sort-search-group">
-                    <div class="search-input-wrapper">
-                        <i data-lucide="search" class="search-icon"></i>
-                        <input type="text" id="catalog-search" placeholder="O que você está procurando?">
-                        <button id="btn-clear-catalog-search" class="clear-search-btn-inside hidden">
-                            <i data-lucide="x"></i>
+            <!-- Layout do Catálogo em Duas Colunas (Estilo Goedert) -->
+            <div class="catalog-layout">
+                <!-- Coluna 1: Barra Lateral de Categorias -->
+                <aside class="catalog-sidebar">
+                    <div class="sidebar-header">
+                        <i data-lucide="filter"></i>
+                        <h3>Categorias</h3>
+                    </div>
+                    <div class="sidebar-filter-tabs">
+                        <button class="filter-tab-btn active" data-filter="todos">
+                            <i data-lucide="layout-grid"></i>
+                            <span>Todos os Produtos</span>
+                        </button>
+                        <button class="filter-tab-btn" data-filter="limpeza">
+                            <i data-lucide="spray-can"></i>
+                            <span>Limpeza Geral</span>
+                        </button>
+                        <button class="filter-tab-btn" data-filter="utensilios">
+                            <i data-lucide="brush"></i>
+                            <span>Utensílios de Faxina</span>
+                        </button>
+                        <button class="filter-tab-btn" data-filter="piscina">
+                            <i data-lucide="waves"></i>
+                            <span>Linha Piscina</span>
+                        </button>
+                        <button class="filter-tab-btn" data-filter="automotivo">
+                            <i data-lucide="car"></i>
+                            <span>Linha Automotiva</span>
                         </button>
                     </div>
-                    <div class="select-sort-wrapper">
-                        <select id="catalog-sort" class="sort-select" title="Ordernar por">
-                            <option value="default">Relevância</option>
-                            <option value="name-asc">Nome (A - Z)</option>
-                        </select>
+                </aside>
+
+                <!-- Coluna 2: Painel Principal de Produtos -->
+                <div class="catalog-main">
+                    <!-- Barra de Busca e Ordenação -->
+                    <div class="catalog-toolbar">
+                        <div class="search-input-wrapper">
+                            <i data-lucide="search" class="search-icon"></i>
+                            <input type="text" id="catalog-search" placeholder="O que você está procurando?">
+                            <button id="btn-clear-catalog-search" class="clear-search-btn-inside hidden">
+                                <i data-lucide="x"></i>
+                            </button>
+                        </div>
+                        <div class="select-sort-wrapper">
+                            <select id="catalog-sort" class="sort-select" title="Ordenar por">
+                                <option value="default">Relevância</option>
+                                <option value="name-asc">Nome (A - Z)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Grid de Produtos -->
+                    <div class="products-grid" id="products-catalog-grid">
+                        <!-- Inserido dinamicamente via JS -->
+                    </div>
+
+                    <!-- Estado de Busca Vazia -->
+                    <div class="empty-search-state hidden" id="empty-search">
+                        <div class="empty-search-icon">🔎</div>
+                        <h3>Nenhum produto encontrado</h3>
+                        <p>Não encontramos nenhum produto correspondente ao termo pesquisado. Tente pesquisar por palavras-chave mais genéricas.</p>
+                        <button class="btn btn-secondary" id="btn-reset-filters">Limpar Filtros e Busca</button>
                     </div>
                 </div>
-            </div>
-
-            <!-- Grid de Produtos -->
-            <div class="products-grid" id="products-catalog-grid">
-                <!-- Inserido dinamicamente via JS -->
-            </div>
-
-            <!-- Estado de Busca Vazia -->
-            <div class="empty-search-state hidden" id="empty-search">
-                <div class="empty-search-icon">🔎</div>
-                <h3>Nenhum produto encontrado</h3>
-                <p>Não encontramos nenhum produto correspondente ao termo pesquisado. Tente pesquisar por palavras-chave mais genéricas.</p>
-                <button class="btn btn-secondary" id="btn-reset-filters">Limpar Filtros e Busca</button>
             </div>
         </div>
     </section>
@@ -478,7 +504,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="contact-phone">Telefone/WhatsApp</label>
-                                <input type="tel" id="contact-phone" placeholder="Ex: (48) 99999-9999" required>
+                                <input type="tel" id="contact-phone" placeholder="Ex: (48) 99948-2702" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -517,7 +543,7 @@
                             <i data-lucide="phone" class="info-icon"></i>
                             <div class="info-content">
                                 <span>Telefone / WhatsApp</span>
-                                <strong>(48) 99999-9999</strong>
+                                <strong>(48) 99948-2702</strong>
                             </div>
                         </div>
 
@@ -525,7 +551,7 @@
                             <i data-lucide="mail" class="info-icon"></i>
                             <div class="info-content">
                                 <span>E-mail Corporativo</span>
-                                <strong>contato@totalmixutilidades.com.br</strong>
+                                <strong>totalmixutilidades@hotmail.com</strong>
                             </div>
                         </div>
 
@@ -533,7 +559,7 @@
                             <i data-lucide="map-pin" class="info-icon"></i>
                             <div class="info-content">
                                 <span>Centro de Distribuição</span>
-                                <strong>Av. Principal de Logística, 1200 - Galpão 04, Palhoça - SC</strong>
+                                <strong>Rua Severiano Firmino Marins, 397, Ribeirão da Ilha - Florianópolis - SC</strong>
                             </div>
                         </div>
 
@@ -616,7 +642,7 @@
                 </div>
                 <div class="delivery-address-input-wrapper" id="delivery-address-group">
                     <label for="cart-address-input">Endereço de Entrega (Cidade/Bairro):</label>
-                    <input type="text" id="cart-address-input" placeholder="Ex: Palhoça, Centro - Rua 10, nº 100">
+                    <input type="text" id="cart-address-input" placeholder="Ex: Florianópolis, Ribeirão da Ilha - Servidão Silva, nº 100">
                 </div>
             </div>
 
@@ -746,12 +772,13 @@
             <div class="footer-col">
                 <h3>Centro de Distribuição</h3>
                 <p class="footer-address">
-                    Av. Principal de Logística, 1200 - Galpão 04<br>
-                    Palhoça - SC - CEP 88130-000
+                    Rua Severiano Firmino Marins, 397<br>
+                    Ribeirão da Ilha - Florianópolis - SC<br>
+                    CEP 88064-400
                 </p>
                 <p class="footer-contact-info">
-                    WhatsApp: (48) 99999-9999<br>
-                    E-mail: contato@totalmixutilidades.com.br
+                    WhatsApp: (48) 99948-2702<br>
+                    E-mail: totalmixutilidades@hotmail.com
                 </p>
             </div>
         </div>

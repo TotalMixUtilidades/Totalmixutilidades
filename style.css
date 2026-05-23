@@ -1060,52 +1060,127 @@ img, svg {
     border-top: 1px solid rgba(15, 30, 54, 0.08);
 }
 
-/* ══ SEÇÃO DE PRODUTOS (CATÁLOGO) ══ */
-.catalog-controls {
+/* ══ SEÇÃO DE PRODUTOS (CATÁLOGO EM 2 COLUNAS) ══ */
+.catalog-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+    .catalog-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Barra Lateral de Categorias (Estilo Goedert) */
+.catalog-sidebar {
+    background: var(--bg-surface);
+    border-radius: var(--border-radius-md);
+    border: 1px solid rgba(15, 30, 54, 0.06);
+    box-shadow: var(--shadow-sm);
+    padding: 24px;
+    position: sticky;
+    top: 100px;
+    z-index: 10;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 16px;
+    border-bottom: 1.5px solid rgba(15, 30, 54, 0.05);
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+}
+.sidebar-header svg {
+    width: 20px;
+    height: 20px;
+    color: var(--primary);
+}
+.sidebar-header h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.sidebar-filter-tabs {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-bottom: 40px;
+    gap: 8px;
 }
 
-/* Filtros em Abas */
-.filter-tabs {
+/* Botões de Filtro Lateral */
+.sidebar-filter-tabs .filter-tab-btn {
     display: flex;
+    align-items: center;
     gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.filter-tab-btn {
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;
-    padding: 10px 22px;
-    border-radius: 50px;
-    background: var(--bg-surface);
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: var(--border-radius-sm);
+    background: transparent;
     color: var(--text-secondary);
-    border: 1px solid rgba(15, 30, 54, 0.08);
-    box-shadow: var(--shadow-sm);
+    border: 1px solid transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.92rem;
+    text-align: left;
+    box-shadow: none;
+    transition: all var(--transition-fast);
+    cursor: pointer;
+}
+
+.sidebar-filter-tabs .filter-tab-btn svg {
+    width: 18px;
+    height: 18px;
+    color: var(--text-muted);
     transition: all var(--transition-fast);
 }
-.filter-tab-btn:hover {
-    background: var(--bg-main);
-    color: var(--primary-dark);
-    border-color: var(--text-muted);
-}
-.filter-tab-btn.active {
-    background: var(--primary-dark);
-    color: var(--text-white);
-    border-color: var(--primary-dark);
-    box-shadow: 0 4px 12px rgba(15, 30, 54, 0.15);
+
+.sidebar-filter-tabs .filter-tab-btn:hover {
+    background: rgba(0, 86, 179, 0.05);
+    color: var(--primary);
+    border-color: rgba(0, 86, 179, 0.08);
 }
 
-/* Barra de Busca + Ordenação */
-.sort-search-group {
+.sidebar-filter-tabs .filter-tab-btn:hover svg {
+    color: var(--primary);
+}
+
+.sidebar-filter-tabs .filter-tab-btn.active {
+    background: linear-gradient(135deg, var(--primary) 0%, #004085 100%);
+    color: var(--text-white);
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.15);
+}
+
+.sidebar-filter-tabs .filter-tab-btn.active svg {
+    color: var(--text-white);
+}
+
+/* Painel Principal e Toolbar do Catálogo */
+.catalog-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.catalog-toolbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 16px;
     flex-wrap: wrap;
+    background: var(--bg-surface);
+    padding: 16px 20px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(15, 30, 54, 0.05);
+    box-shadow: var(--shadow-sm);
 }
+
 .search-input-wrapper {
     position: relative;
     flex-grow: 1;
@@ -1173,6 +1248,59 @@ img, svg {
     transform: translateY(-50%);
     pointer-events: none;
     color: var(--text-secondary);
+}
+
+/* Imagens do Catálogo e Fallback */
+.product-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 12px;
+    transition: transform var(--transition-smooth);
+}
+.product-card:hover .product-card-img {
+    transform: scale(1.05);
+}
+
+.product-fallback-icon {
+    display: none;
+    color: var(--primary-light);
+    align-items: center;
+    justify-content: center;
+}
+.product-fallback-icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.modal-product-img {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: var(--border-radius-md);
+    background: var(--bg-main);
+    padding: 16px;
+}
+
+.modal-fallback-icon {
+    background: var(--bg-main);
+    border-radius: var(--border-radius-md);
+    height: 250px;
+    width: 100%;
+}
+
+/* Descrição nos Cards de Produto */
+.product-card-desc {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin-top: 6px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 38px;
 }
 
 /* Grid de Produtos */

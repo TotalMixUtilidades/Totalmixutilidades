@@ -389,9 +389,8 @@ let kitSelection = {
     step3: [], // Máx 2
     step4: []  // Máx 2
 };
-
-// Configuração do WhatsApp da loja (Substitua por número válido, ex: 5548999999999)
-const STORE_PHONE = "5548999999999"; 
+// Configuração do WhatsApp da loja
+const STORE_PHONE = "5548999482702"; 
 
 // ══ INICIALIZAÇÃO DO APP ══
 document.addEventListener("DOMContentLoaded", () => {
@@ -499,12 +498,16 @@ function renderCatalog() {
             <article class="product-card" id="card-${prod.id}">
                 ${prod.tag ? `<div class="product-tag-badge ${prod.tagClass || 'tag-new'}">${prod.tag}</div>` : ''}
                 <div class="product-img-box" onclick="openProductDetail('${prod.id}')">
-                    <i data-lucide="${prod.icon}"></i>
+                    <img src="images/produtos/${prod.id}.jpg" alt="${prod.name}" class="product-card-img" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="product-fallback-icon" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                        <i data-lucide="${prod.icon}"></i>
+                    </div>
                     <div class="product-quick-view">Visualização Rápida</div>
                 </div>
                 <div class="product-info-box">
                     <span class="product-category">${getCategoryNamePT(prod.category)}</span>
                     <h3 class="product-title" onclick="openProductDetail('${prod.id}')">${prod.name}</h3>
+                    <p class="product-card-desc">${prod.description ? prod.description.substring(0, 65) + '...' : ''}</p>
                     <span class="product-volume">${prod.volume}</span>
                     <div class="product-rating">
                         ${'★'.repeat(prod.rating)}${'☆'.repeat(5 - prod.rating)}
@@ -1098,9 +1101,14 @@ window.openProductDetail = function(productId) {
     // Atualiza a quantidade do input
     document.getElementById("input-modal-qty").value = currentModalQty;
     
-    // Define o ícone no container
+    // Define a imagem com fallback no container
     const iconContainer = document.getElementById("modal-product-icon-container");
-    iconContainer.innerHTML = `<i data-lucide="${product.icon}" style="width: 100px; height: 100px;"></i>`;
+    iconContainer.innerHTML = `
+        <img src="images/produtos/${product.id}.jpg" alt="${product.name}" class="modal-product-img" onload="this.nextElementSibling.style.display='none';" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="max-width: 100%; max-height: 250px; object-fit: contain; border-radius: var(--border-radius-md);">
+        <div class="modal-fallback-icon" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+            <i data-lucide="${product.icon}" style="width: 100px; height: 100px;"></i>
+        </div>
+    `;
     
     // Abre o modal
     const modal = document.getElementById("product-detail-modal");
