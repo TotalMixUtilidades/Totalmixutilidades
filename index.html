@@ -94,8 +94,8 @@
                 </div>
 
                 <!-- Ícone de Carrinho Flutuante -->
-                <button class="cart-trigger-btn" id="btn-cart-toggle" aria-label="Ver Carrinho">
-                    <i data-lucide="shopping-cart"></i>
+                <button class="cart-trigger-btn" id="btn-cart-toggle" aria-label="Ver Lista de Orçamento" title="Ver Lista de Orçamento">
+                    <i data-lucide="clipboard-list"></i>
                     <span class="cart-badge" id="cart-counter">0</span>
                 </button>
 
@@ -163,12 +163,8 @@
                         </div>
                         <h3>Super Kit Limpeza Express</h3>
                         <p>Detergente Concentrado + Pano Microfibra + Desinfetante Perfumado.</p>
-                        <div class="price-row">
-                            <span class="old-price">R$ 49,90</span>
-                            <span class="new-price">R$ 39,90</span>
-                        </div>
-                        <button class="btn btn-primary btn-block btn-add-promo" data-promo-id="promo-1">
-                            Adicionar Oferta
+                        <button class="btn btn-primary btn-block btn-add-promo" data-promo-id="promo-1" style="margin-top: 15px;">
+                            Solicitar Orçamento
                         </button>
                     </div>
                 </div>
@@ -233,9 +229,9 @@
     <section class="kit-builder-section" id="monte-seu-kit">
         <div class="section-container">
             <div class="section-header text-center">
-                <span class="section-tag">Desconto Especial</span>
-                <h2 class="section-title">Monte Seu Kit Personalizado!</h2>
-                <p class="section-subtitle">Monte seu combo com os itens necessários para sua faxina e ganhe <strong>15% de Desconto</strong> automático no total do Kit!</p>
+                <span class="section-tag">Praticidade</span>
+                <h2 class="section-title">Monte Seu Combo Personalizado!</h2>
+                <p class="section-subtitle">Selecione os itens necessários para a sua faxina e solicite um orçamento sob medida para o seu combo.</p>
                 <div class="section-divider"></div>
             </div>
 
@@ -300,22 +296,8 @@
                             <div class="kit-progress-bar" id="kit-progress"></div>
                             <span class="kit-progress-text" id="kit-progress-label">0% Concluído</span>
                         </div>
-                        <div class="kit-pricing-summary">
-                            <div class="price-row-item">
-                                <span>Subtotal do Kit:</span>
-                                <span id="kit-subtotal">R$ 0,00</span>
-                            </div>
-                            <div class="price-row-item discount-row hidden" id="kit-discount-row">
-                                <span>Desconto do Combo (15%):</span>
-                                <span id="kit-discount">- R$ 0,00</span>
-                            </div>
-                            <div class="price-row-item total-row">
-                                <span>Valor Final do Kit:</span>
-                                <span id="kit-total">R$ 0,00</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary btn-block" id="btn-add-kit-to-cart" disabled>
-                            <i data-lucide="shopping-cart"></i> Adicionar Kit ao Carrinho
+                        <button class="btn btn-primary btn-block" id="btn-add-kit-to-cart" disabled style="margin-top: 20px;">
+                            <i data-lucide="plus"></i> Adicionar Combo à Lista
                         </button>
                     </div>
                 </div>
@@ -353,8 +335,6 @@
                     <div class="select-sort-wrapper">
                         <select id="catalog-sort" class="sort-select" title="Ordernar por">
                             <option value="default">Relevância</option>
-                            <option value="price-asc">Menor Preço</option>
-                            <option value="price-desc">Maior Preço</option>
                             <option value="name-asc">Nome (A - Z)</option>
                         </select>
                     </div>
@@ -596,10 +576,10 @@
     <aside class="cart-drawer" id="cart-drawer">
         <div class="cart-drawer-header">
             <div class="title-wrap">
-                <i data-lucide="shopping-cart"></i>
-                <h2>Meu Carrinho</h2>
+                <i data-lucide="clipboard-list"></i>
+                <h2>Lista de Orçamento</h2>
             </div>
-            <button class="btn-close-cart" id="btn-cart-close" aria-label="Fechar Carrinho">
+            <button class="btn-close-cart" id="btn-cart-close" aria-label="Fechar Lista de Orçamento">
                 <i data-lucide="x"></i>
             </button>
         </div>
@@ -609,20 +589,16 @@
             <!-- Renderizado dinamicamente pelo JS -->
             <div class="empty-cart-state">
                 <i data-lucide="shopping-bag" class="empty-icon"></i>
-                <p>Seu carrinho está vazio.</p>
-                <a href="#produtos" class="btn btn-secondary" id="btn-start-shopping">Escolher Produtos</a>
+                <p>Sua lista de orçamento está vazia.</p>
+                <a href="#produtos" class="btn btn-secondary" id="btn-start-shopping">Ver Produtos</a>
             </div>
         </div>
 
         <!-- Rodapé do Carrinho -->
         <div class="cart-drawer-footer" id="cart-footer-area">
             <div class="cart-summary-line">
-                <span>Itens:</span>
+                <span>Itens Selecionados:</span>
                 <span id="cart-total-items">0</span>
-            </div>
-            <div class="cart-summary-line total-price-line">
-                <span>Total Estimado:</span>
-                <span id="cart-total-price">R$ 0,00</span>
             </div>
 
             <!-- Dados de entrega/retirada fictícios para o Zap -->
@@ -649,7 +625,7 @@
                 <svg viewBox="0 0 24 24" class="whatsapp-icon" width="20" height="20">
                     <path fill="currentColor" d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.761.459 3.477 1.332 4.992L2 22l5.163-1.355c1.464.8 3.102 1.22 4.849 1.22h.004c5.505 0 9.988-4.482 9.988-9.988 0-2.667-1.037-5.176-2.923-7.062C17.195 3.03 14.683 2 12.012 2zm0 1.69c2.215 0 4.298.863 5.864 2.43 1.566 1.567 2.43 3.65 2.43 5.867 0 4.577-3.72 8.297-8.298 8.297h-.003c-1.523 0-3.023-.418-4.336-1.207l-.311-.185-3.226.846.861-3.146-.204-.325c-.867-1.381-1.326-2.983-1.326-4.636-.001-4.577 3.72-8.297 8.298-8.297zm-3.844 4.76c-.211 0-.46.079-.696.347-.236.268-.902.882-.902 2.149 0 1.268.922 2.493 1.05 2.668.127.174 1.815 2.772 4.398 3.882.615.264 1.094.422 1.468.541.617.196 1.178.168 1.621.102.495-.074 1.517-.62 1.73-.1.213-.52.213-.966.213-1.047 0-.083-.049-.153-.122-.19l-.536-.268c-.347-.174-2.054-1.013-2.375-1.129-.321-.115-.555-.174-.79.174-.236.347-.902 1.129-1.107 1.36-.206.232-.412.26-.76.087-.348-.174-1.47-.542-2.798-1.727-1.034-.922-1.731-2.062-1.934-2.41-.203-.348-.022-.536.152-.709.156-.156.348-.407.521-.61.173-.203.23-.348.347-.58.117-.232.058-.435-.029-.61-.087-.174-.79-1.901-1.082-2.603-.284-.682-.573-.59-.79-.601-.204-.01-.437-.013-.67-.013z"/>
                 </svg>
-                Finalizar no WhatsApp
+                Solicitar Orçamento no WhatsApp
             </button>
         </div>
     </aside>
@@ -705,10 +681,6 @@
 
                     <!-- Rodapé de compra do modal -->
                     <div class="modal-buy-footer">
-                        <div class="modal-price-box">
-                            <span class="price-label">Preço Unitário</span>
-                            <strong class="modal-price-val" id="modal-product-price">R$ 24,90</strong>
-                        </div>
                         <div class="modal-action-row">
                             <div class="qty-selector">
                                 <button class="btn-qty-minus" id="btn-modal-qty-minus">−</button>
@@ -716,7 +688,7 @@
                                 <button class="btn-qty-plus" id="btn-modal-qty-plus">+</button>
                             </div>
                             <button class="btn btn-primary" id="btn-modal-add-to-cart">
-                                <i data-lucide="shopping-cart"></i> Adicionar ao Carrinho
+                                <i data-lucide="plus"></i> Adicionar à Lista
                             </button>
                         </div>
                     </div>

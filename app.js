@@ -9,7 +9,6 @@ const PRODUCTS = [
         id: "limp-detergente-pro",
         name: "Detergente Neutro Pro 5L",
         category: "limpeza",
-        price: 24.90,
         volume: "Bombona de 5 Litros",
         tag: "Mais Vendido",
         tagClass: "tag-bestseller",
@@ -24,7 +23,6 @@ const PRODUCTS = [
         id: "limp-desinfetante-euc",
         name: "Desinfetante Concentrado Eucalipto 5L",
         category: "limpeza",
-        price: 29.90,
         volume: "Bombona de 5 Litros",
         tag: "Mais Vendido",
         tagClass: "tag-bestseller",
@@ -39,7 +37,6 @@ const PRODUCTS = [
         id: "limp-multiuso-prem",
         name: "Limpador Multiuso Premium 1L",
         category: "limpeza",
-        price: 14.90,
         volume: "Frasco de 1 Litro",
         tag: "Básico",
         tagClass: "tag-new",
@@ -54,7 +51,6 @@ const PRODUCTS = [
         id: "limp-pos-obra",
         name: "Limpador Pós-Obra Ultra 5L",
         category: "limpeza",
-        price: 44.90,
         volume: "Bombona de 5 Litros",
         tag: "Profissional",
         tagClass: "tag-bestseller",
@@ -69,7 +65,6 @@ const PRODUCTS = [
         id: "limp-cloro-gel",
         name: "Cloro Gel Ativo Aditivado 1L",
         category: "limpeza",
-        price: 18.90,
         volume: "Frasco de 1 Litro",
         tag: "Lançamento",
         tagClass: "tag-new",
@@ -84,7 +79,6 @@ const PRODUCTS = [
         id: "limp-aromatizante-lav",
         name: "Aromatizador Lavanda CD 140ml",
         category: "limpeza",
-        price: 16.50,
         volume: "Frasco Gotas de 140ml",
         tag: "Concentrado",
         tagClass: "tag-new",
@@ -101,10 +95,9 @@ const PRODUCTS = [
         id: "pisc-cloro-gran",
         name: "Cloro Granulado Estabilizado 10kg",
         category: "piscina",
-        price: 189.90,
         volume: "Balde de 10 Kg",
-        tag: "10% OFF",
-        tagClass: "tag-promo",
+        tag: "Essencial",
+        tagClass: "tag-bestseller",
         icon: "waves",
         rating: 5,
         yield: "Rendimento para piscinas de grande porte",
@@ -116,7 +109,6 @@ const PRODUCTS = [
         id: "pisc-algicida-choque",
         name: "Algicida de Choque Extra Fiel 1L",
         category: "piscina",
-        price: 27.90,
         volume: "Frasco de 1 Litro",
         tag: "Eficiente",
         tagClass: "tag-bestseller",
@@ -131,7 +123,6 @@ const PRODUCTS = [
         id: "pisc-clarificante",
         name: "Clarificante e Floculante Concentrado 1L",
         category: "piscina",
-        price: 19.90,
         volume: "Frasco de 1 Litro",
         tag: "Brilho Extra",
         tagClass: "tag-new",
@@ -146,7 +137,6 @@ const PRODUCTS = [
         id: "pisc-barrilha-ph",
         name: "Elevador de pH Barrilha Leve 2kg",
         category: "piscina",
-        price: 16.90,
         volume: "Saco de 2 Kg",
         tag: "Essencial",
         tagClass: "tag-bestseller",
@@ -161,7 +151,6 @@ const PRODUCTS = [
         id: "pisc-limpa-bordas",
         name: "Limpa Bordas Gel Concentrado 1L",
         category: "piscina",
-        price: 22.90,
         volume: "Frasco de 1 Litro",
         tag: "Praticidade",
         tagClass: "tag-new",
@@ -178,7 +167,6 @@ const PRODUCTS = [
         id: "auto-shampoo-cera",
         name: "Lava Carros com Cera Carnaúba 1L",
         category: "automotivo",
-        price: 19.90,
         volume: "Frasco de 1 Litro",
         tag: "Mais Vendido",
         tagClass: "tag-bestseller",
@@ -193,7 +181,6 @@ const PRODUCTS = [
         id: "auto-pretinho-pneu",
         name: "Pretinho Especial Brilho Molhado 1L",
         category: "automotivo",
-        price: 24.90,
         volume: "Garrafa de 1 Litro",
         tag: "Brilho Intenso",
         tagClass: "tag-bestseller",
@@ -208,7 +195,6 @@ const PRODUCTS = [
         id: "auto-cera-polidora",
         name: "Cera Carnaúba Polidora Paste 200g",
         category: "automotivo",
-        price: 34.90,
         volume: "Lata de 200g",
         tag: "Oferta",
         tagClass: "tag-promo",
@@ -223,7 +209,6 @@ const PRODUCTS = [
         id: "auto-limpa-vidros",
         name: "Limpa Vidros Antiembaçante 500ml",
         category: "automotivo",
-        price: 15.90,
         volume: "Pulverizador 500ml",
         tag: "Prático",
         tagClass: "tag-new",
@@ -231,14 +216,13 @@ const PRODUCTS = [
         rating: 4,
         yield: "Rendimento prolongado",
         dilution: "Pronto Uso",
-        usage: "Pulverizar o produto nos vidros externos/internos e secar em seguida com pano de microfibra limpo em movimentos circulares.",
+        usage: "Pulverizar o produto nos vidros externos/internos e secar em seguida com pano de microfibra limpo e seco.",
         description: "Limpador especial para vidros e espelhos automotivos. Remove marcas de gordura e poeira, deixando uma película invisível que evita o embaçamento em dias de chuva."
     },
     {
         id: "auto-renovador",
         name: "Renovador de Plásticos e Borrachas 250g",
         category: "automotivo",
-        price: 29.90,
         volume: "Pote de 250g",
         tag: "Lançamento",
         tagClass: "tag-new",
@@ -247,7 +231,7 @@ const PRODUCTS = [
         yield: "Alta cobertura em painéis e parachoques",
         dilution: "Pronto Uso (Gel/Pasta)",
         usage: "Aplicar pequena quantidade com esponja de espuma sobre os plásticos internos (painel) ou externos do veículo. Lustrar de leve para acabamento seco.",
-        description: "Gel de silicone especial para restaurar o aspecto original de plásticos e borrachas ressecadas. Proporciona brilho acetinado com proteção contra raios solares UV."
+        description: "Gel de silicone especial para restaurar o aspect original de plásticos e borrachas ressecadas. Proporciona brilho acetinado com proteção contra raios solares UV."
     },
 
     // --- UTENSÍLIOS DE FAXINA ---
@@ -255,7 +239,6 @@ const PRODUCTS = [
         id: "uten-mop-inox",
         name: "Mop Giratório Inox com Balde 15L",
         category: "utensilios",
-        price: 89.90,
         volume: "Kit Completo (Balde + Mop + Refil)",
         tag: "Oferta",
         tagClass: "tag-promo",
@@ -270,7 +253,6 @@ const PRODUCTS = [
         id: "uten-vassoura",
         name: "Vassoura de Nylon Macia com Cabo",
         category: "utensilios",
-        price: 19.90,
         volume: "Unidade (Cerdas + Cabo 1.20m)",
         tag: "Básico",
         tagClass: "tag-bestseller",
@@ -285,7 +267,6 @@ const PRODUCTS = [
         id: "uten-rodo-alum",
         name: "Rodo de Alumínio Reforçado 40cm",
         category: "utensilios",
-        price: 29.90,
         volume: "Unidade com Cabo",
         tag: "Durabilidade",
         tagClass: "tag-bestseller",
@@ -300,7 +281,6 @@ const PRODUCTS = [
         id: "uten-panos-micro",
         name: "Kit Panos de Microfibra 30x30 (5 un)",
         category: "utensilios",
-        price: 22.90,
         volume: "Embalagem com 5 unidades",
         tag: "Mais Vendido",
         tagClass: "tag-bestseller",
@@ -315,7 +295,6 @@ const PRODUCTS = [
         id: "uten-luvas-latex",
         name: "Luvas de Látex Multiuso Forradas (Par)",
         category: "utensilios",
-        price: 8.90,
         volume: "Par de Luvas",
         tag: "EPI",
         tagClass: "tag-new",
@@ -330,7 +309,6 @@ const PRODUCTS = [
         id: "uten-balde-15l",
         name: "Balde Plástico Reforçado 15 Litros",
         category: "utensilios",
-        price: 14.90,
         volume: "Balde plástico 15L",
         tag: "Básico",
         tagClass: "tag-new",
@@ -345,7 +323,6 @@ const PRODUCTS = [
         id: "uten-esponjas",
         name: "Esponjas Dupla Face Macias (4 un)",
         category: "utensilios",
-        price: 6.50,
         volume: "Pacote com 4 unidades",
         tag: "Uso Diário",
         tagClass: "tag-new",
@@ -364,37 +341,37 @@ const KIT_STEPS_CONFIG = {
         title: "Balde ou Organização",
         allowedQuantity: 1,
         items: [
-            { id: "uten-balde-15l", name: "Balde Plástico Reforçado 15L", price: 14.90, volume: "15 Litros", icon: "bucket" },
-            { id: "uten-mop-inox-bucket", name: "Balde Espremedor Centrífuga Mop", price: 49.90, volume: "Sistema Inox", icon: "bucket" }
+            { id: "uten-balde-15l", name: "Balde Plástico Reforçado 15L", volume: "15 Litros", icon: "bucket" },
+            { id: "uten-mop-inox-bucket", name: "Balde Espremedor Centrífuga Mop", volume: "Sistema Inox", icon: "bucket" }
         ]
     },
     step2: {
         title: "Equipamento Principal",
         allowedQuantity: 1,
         items: [
-            { id: "uten-mop-inox", name: "Mop Giratório Inox (Sem Balde)", price: 40.00, volume: "Cabo + Refil", icon: "brush" },
-            { id: "uten-vassoura", name: "Vassoura Nylon Macia", price: 19.90, volume: "Com Cabo", icon: "brush" },
-            { id: "uten-rodo-alum", name: "Rodo Alumínio 40cm", price: 29.90, volume: "Com Cabo", icon: "brush" }
+            { id: "uten-mop-inox", name: "Mop Giratório Inox (Sem Balde)", volume: "Cabo + Refil", icon: "brush" },
+            { id: "uten-vassoura", name: "Vassoura Nylon Macia", volume: "Com Cabo", icon: "brush" },
+            { id: "uten-rodo-alum", name: "Rodo Alumínio 40cm", volume: "Com Cabo", icon: "brush" }
         ]
     },
     step3: {
         title: "Produtos Químicos (Escolha 2)",
         allowedQuantity: 2,
         items: [
-            { id: "limp-detergente-pro", name: "Detergente Neutro Pro 5L", price: 24.90, volume: "5 Litros", icon: "droplet" },
-            { id: "limp-desinfetante-euc", name: "Desinfetante Eucalipto 5L", price: 29.90, volume: "5 Litros", icon: "wind" },
-            { id: "limp-cloro-gel", name: "Cloro Gel Ativo 1L", price: 18.90, volume: "1 Litro", icon: "droplet" },
-            { id: "auto-shampoo-cera", name: "Lava Carros com Cera 1L", price: 19.90, volume: "1 Litro", icon: "car" },
-            { id: "pisc-clarificante", name: "Clarificante Piscina 1L", price: 19.90, volume: "1 Litro", icon: "waves" }
+            { id: "limp-detergente-pro", name: "Detergente Neutro Pro 5L", volume: "5 Litros", icon: "droplet" },
+            { id: "limp-desinfetante-euc", name: "Desinfetante Eucalipto 5L", volume: "5 Litros", icon: "wind" },
+            { id: "limp-cloro-gel", name: "Cloro Gel Ativo 1L", volume: "1 Litro", icon: "droplet" },
+            { id: "auto-shampoo-cera", name: "Lava Carros com Cera 1L", volume: "1 Litro", icon: "car" },
+            { id: "pisc-clarificante", name: "Clarificante Piscina 1L", volume: "1 Litro", icon: "waves" }
         ]
     },
     step4: {
         title: "Acessórios de Faxina (Escolha 2)",
         allowedQuantity: 2,
         items: [
-            { id: "uten-panos-micro", name: "Kit Panos Microfibra (5 un)", price: 22.90, volume: "30x30cm", icon: "brush" },
-            { id: "uten-luvas-latex", name: "Luvas de Látex Forradas", price: 8.90, volume: "Par de Luvas", icon: "brush" },
-            { id: "uten-esponjas", name: "Esponjas Dupla Face (4 un)", price: 6.50, volume: "4 Unidades", icon: "brush" }
+            { id: "uten-panos-micro", name: "Kit Panos Microfibra (5 un)", volume: "30x30cm", icon: "brush" },
+            { id: "uten-luvas-latex", name: "Luvas de Látex Forradas", volume: "Par de Luvas", icon: "brush" },
+            { id: "uten-esponjas", name: "Esponjas Dupla Face (4 un)", volume: "4 Unidades", icon: "brush" }
         ]
     }
 };
@@ -503,11 +480,7 @@ function renderCatalog() {
     });
     
     // 2. Ordenar Produtos
-    if (currentSort === "price-asc") {
-        filtered.sort((a, b) => a.price - b.price);
-    } else if (currentSort === "price-desc") {
-        filtered.sort((a, b) => b.price - a.price);
-    } else if (currentSort === "name-asc") {
+    if (currentSort === "name-asc") {
         filtered.sort((a, b) => a.name.localeCompare(b.name));
     }
     
@@ -537,8 +510,8 @@ function renderCatalog() {
                         ${'★'.repeat(prod.rating)}${'☆'.repeat(5 - prod.rating)}
                     </div>
                     <div class="product-price-row">
-                        <span class="product-price">R$ ${prod.price.toFixed(2).replace('.', ',')}</span>
-                        <button class="btn-add-cart-circle" onclick="addToCart('${prod.id}')" title="Adicionar ao carrinho" aria-label="Adicionar ao carrinho">
+                        <span class="product-price" style="font-size: 0.95rem; color: var(--primary);">Sob Consulta</span>
+                        <button class="btn-add-cart-circle" onclick="addToCart('${prod.id}')" title="Adicionar à lista de orçamento" aria-label="Adicionar à lista de orçamento">
                             <i data-lucide="plus"></i>
                         </button>
                     </div>
@@ -671,7 +644,6 @@ function renderCart() {
     const cartItemsContainer = document.getElementById("cart-items-container");
     const cartCounter = document.getElementById("cart-counter");
     const cartTotalItems = document.getElementById("cart-total-items");
-    const cartTotalPrice = document.getElementById("cart-total-price");
     
     if (!cartItemsContainer) return;
     
@@ -684,23 +656,17 @@ function renderCart() {
         cartItemsContainer.innerHTML = `
             <div class="empty-cart-state">
                 <i data-lucide="shopping-bag" class="empty-icon" style="width:50px; height:50px; color:var(--text-muted); margin-bottom:12px;"></i>
-                <p style="color:var(--text-secondary)">Seu carrinho está vazio.</p>
-                <button class="btn btn-secondary" style="margin-top:16px;" onclick="closeCartDrawer()">Explorar Produtos</button>
+                <p style="color:var(--text-secondary)">Sua lista de orçamento está vazia.</p>
+                <button class="btn btn-secondary" style="margin-top:16px;" onclick="closeCartDrawer()">Ver Produtos</button>
             </div>
         `;
-        cartTotalPrice.innerText = "R$ 0,00";
         lucide.createIcons();
         return;
     }
     
-    let totalValue = 0;
-    
     cartItemsContainer.innerHTML = cart.map(item => {
         let name = item.name;
-        let price = item.price;
         let isKit = item.isKit || false;
-        
-        totalValue += price * item.quantity;
         
         // Determina o ícone com base na categoria ou se é kit
         let iconName = "droplet";
@@ -717,10 +683,9 @@ function renderCart() {
                 </div>
                 <div class="cart-item-details">
                     <h4>${name}</h4>
-                    <span>${isKit ? 'Combo de Faxina 15% OFF' : item.volume}</span>
+                    <span>${isKit ? 'Combo de Faxina Personalizado' : item.volume}</span>
                 </div>
                 <div class="cart-item-actions">
-                    <span class="cart-item-price">R$ ${(price * item.quantity).toFixed(2).replace('.', ',')}</span>
                     <div class="qty-adjuster-row">
                         <button class="qty-adjuster-btn" onclick="adjustQuantity('${item.id}', -1)" aria-label="Reduzir quantidade">−</button>
                         <span class="qty-display-num">${item.quantity}</span>
@@ -732,7 +697,6 @@ function renderCart() {
         `;
     }).join("");
     
-    cartTotalPrice.innerText = `R$ ${totalValue.toFixed(2).replace('.', ',')}`;
     lucide.createIcons();
 }
 
@@ -749,7 +713,6 @@ window.addToCart = function(productId, qty = 1) {
             id: `cart-item-${Date.now()}-${Math.random().toString(36).substr(2, 5)}`,
             productId: product.id,
             name: product.name,
-            price: product.price,
             volume: product.volume,
             quantity: qty,
             isKit: false
@@ -861,26 +824,24 @@ function initCartControls() {
 
 // ══ FORMATAR PEDIDO E ENVIAR PARA O WHATSAPP ══
 function sendCartToWhatsApp(method, address) {
-    let subtotal = 0;
-    
-    let text = `🛒 *NOVO PEDIDO - TOTAL MIX UTILIDADES*\n`;
+    let text = `📋 *SOLICITAÇÃO DE ORÇAMENTO - TOTAL MIX*\n`;
     text += `===================================\n\n`;
     
     cart.forEach((item, idx) => {
-        const itemTotal = item.price * item.quantity;
-        subtotal += itemTotal;
-        
         text += `*${idx + 1}. ${item.name}*\n`;
-        text += `   Qtd: ${item.quantity}x | Preço Un: R$ ${item.price.toFixed(2).replace('.', ',')}\n`;
-        text += `   Subtotal: R$ ${itemTotal.toFixed(2).replace('.', ',')}\n`;
+        text += `   Qtd: ${item.quantity}x | Vol/Embalagem: ${item.volume}\n`;
         if (item.isKit) {
-            text += `   _(Combo Personalizado com Desconto de 15%)_\n`;
+            text += `   _(Combo de Faxina Personalizado (6 itens))_\n`;
+            if (item.itemsDetails) {
+                item.itemsDetails.forEach(subItem => {
+                    text += `     - ${subItem.name} (${subItem.volume})\n`;
+                });
+            }
         }
         text += `-----------------------------------\n`;
     });
     
-    text += `\n💵 *VALOR TOTAL: R$ ${subtotal.toFixed(2).replace('.', ',')}*`;
-    text += `\n\n🛵 *MÉTODO DE RECEBIMENTO:*`;
+    text += `\n🛵 *MÉTODO DE RECEBIMENTO:*`;
     
     if (method === "entrega") {
         text += `\n   » *Solicitar Entrega*`;
@@ -890,7 +851,7 @@ function sendCartToWhatsApp(method, address) {
     }
     
     text += `\n\n===================================\n`;
-    text += `Gostaria de finalizar meu pedido e combinar as opções de pagamento e prazo. Obrigado!`;
+    text += `Olá! Gostaria de solicitar um orçamento para os itens listados acima. Como podemos proceder com a cotação? Obrigado!`;
     
     // Codificar URL do WhatsApp
     const encodedText = encodeURIComponent(text);
@@ -930,7 +891,6 @@ function getKitOptionHTML(item, stepNum) {
             </div>
             <h4 title="${item.name}">${item.name}</h4>
             <span class="option-vol">${item.volume}</span>
-            <span class="option-price">R$ ${item.price.toFixed(2).replace('.', ',')}</span>
         </div>
     `;
 }
@@ -977,23 +937,17 @@ function updateKitSummary() {
     const summaryList = document.getElementById("kit-summary-list");
     const progressText = document.getElementById("kit-progress-label");
     const progressBar = document.getElementById("kit-progress");
-    const subtotalText = document.getElementById("kit-subtotal");
-    const discountRow = document.getElementById("kit-discount-row");
-    const discountText = document.getElementById("kit-discount");
-    const totalText = document.getElementById("kit-total");
     const btnAddKit = document.getElementById("btn-add-kit-to-cart");
     
     let selectedProducts = [];
-    let subtotalValue = 0;
     
-    // Reunir todos os itens selecionados e somar preços
+    // Reunir todos os itens selecionados
     Object.keys(kitSelection).forEach(stepKey => {
         const stepConfig = KIT_STEPS_CONFIG[stepKey];
         kitSelection[stepKey].forEach(itemId => {
             const foundItem = stepConfig.items.find(item => item.id === itemId);
             if (foundItem) {
                 selectedProducts.push(foundItem);
-                subtotalValue += foundItem.price;
             }
         });
     });
@@ -1008,7 +962,6 @@ function updateKitSummary() {
     progressText.innerText = `${progressPercentage}% Concluído (${currentSelectedCount} de ${totalNeeded})`;
     
     // Controlar ativação dos blocos visuais de passos
-    // Se o passo anterior for concluído, ativa o próximo
     const isStep1Done = kitSelection.step1.length === 1;
     const isStep2Done = kitSelection.step2.length === 1;
     const isStep3Done = kitSelection.step3.length === 2;
@@ -1038,10 +991,7 @@ function updateKitSummary() {
     
     // Renderizar lista resumo
     if (selectedProducts.length === 0) {
-        summaryList.innerHTML = `<p class="empty-kit-msg">Selecione os itens para começar a montar o seu Kit personalizado.</p>`;
-        subtotalText.innerText = "R$ 0,00";
-        discountRow.classList.add("hidden");
-        totalText.innerText = "R$ 0,00";
+        summaryList.innerHTML = `<p class="empty-kit-msg">Selecione os itens para começar a montar o seu Combo personalizado.</p>`;
         btnAddKit.disabled = true;
         return;
     }
@@ -1051,32 +1001,15 @@ function updateKitSummary() {
             <div class="summary-item-line">
                 <span class="summary-item-name" title="${item.name}">${item.name}</span>
                 <div>
-                    <span>R$ ${item.price.toFixed(2).replace('.', ',')}</span>
                     <span class="summary-item-remove" onclick="removeKitItemFromSummary('${item.id}')">✕</span>
                 </div>
             </div>
         `;
     }).join("");
     
-    // Aplicar regras de preços
-    subtotalText.innerText = `R$ ${subtotalValue.toFixed(2).replace('.', ',')}`;
-    
-    // O kit está completo quando tem exatamente 6 itens
+    // O combo está completo quando tem exatamente 6 itens
     const isKitComplete = currentSelectedCount === totalNeeded;
-    
-    if (isKitComplete) {
-        const discountValue = subtotalValue * 0.15; // 15% OFF
-        const finalValue = subtotalValue - discountValue;
-        
-        discountRow.classList.remove("hidden");
-        discountText.innerText = `- R$ ${discountValue.toFixed(2).replace('.', ',')}`;
-        totalText.innerText = `R$ ${finalValue.toFixed(2).replace('.', ',')}`;
-        btnAddKit.disabled = false;
-    } else {
-        discountRow.classList.add("hidden");
-        totalText.innerText = `R$ ${subtotalValue.toFixed(2).replace('.', ',')}`;
-        btnAddKit.disabled = true;
-    }
+    btnAddKit.disabled = !isKitComplete;
 }
 
 window.removeKitItemFromSummary = function(itemId) {
@@ -1101,7 +1034,6 @@ function initKitBuilderControls() {
         btnAddKit.addEventListener("click", () => {
             // Reunir todos os itens do Kit em um único objeto de produto
             let selectedItems = [];
-            let originalSubtotal = 0;
             
             Object.keys(kitSelection).forEach(stepKey => {
                 const stepConfig = KIT_STEPS_CONFIG[stepKey];
@@ -1109,15 +1041,11 @@ function initKitBuilderControls() {
                     const foundItem = stepConfig.items.find(item => item.id === itemId);
                     if (foundItem) {
                         selectedItems.push(foundItem);
-                        originalSubtotal += foundItem.price;
                     }
                 });
             });
             
             if (selectedItems.length !== 6) return;
-            
-            // Calcula o preço final com o desconto do kit
-            const kitDiscountPrice = originalSubtotal * 0.85; // 15% Desconto
             
             // Monta o nome customizado do kit mostrando os itens principais
             const mainItemsNames = `${selectedItems[0].name.split(" ")[0]} + ${selectedItems[1].name.split(" ")[0]} + Químicos/Acessórios`;
@@ -1126,7 +1054,6 @@ function initKitBuilderControls() {
             cart.push({
                 id: `kit-${Date.now()}`,
                 name: `Combo Faxina: ${mainItemsNames}`,
-                price: parseFloat(kitDiscountPrice.toFixed(2)),
                 quantity: 1,
                 volume: "Combo Customizado (6 itens)",
                 isKit: true,
@@ -1167,7 +1094,6 @@ window.openProductDetail = function(productId) {
     document.getElementById("modal-product-volume").innerText = product.volume;
     document.getElementById("modal-product-yield").innerText = product.yield;
     document.getElementById("modal-product-dilution").innerText = product.dilution;
-    document.getElementById("modal-product-price").innerText = `R$ ${product.price.toFixed(2).replace('.', ',')}`;
     
     // Atualiza a quantidade do input
     document.getElementById("input-modal-qty").value = currentModalQty;
